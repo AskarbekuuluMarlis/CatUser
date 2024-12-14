@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/registration_Fragment">
+    <fragment
+        android:id="@+id/createChatFragment"
+        android:name="com.example.catuser.CreateChatFragment"
+        android:label="fragment_create_chat"
+        tools:layout="@layout/fragment_create_chat" />
+    <fragment
+        android:id="@+id/entrance_Fragment"
+        android:name="com.example.catuser.Entrance_Fragment"
+        android:label="fragment_entrance_"
+        tools:layout="@layout/fragment_entrance_" >
+        <action
+            android:id="@+id/action_entrance_Fragment_to_createChatFragment"
+            app:destination="@id/createChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration_Fragment"
+        android:name="com.example.catuser.Registration_Fragment"
+        android:label="fragment_registration_"
+        tools:layout="@layout/fragment_registration_" >
+        <action
+            android:id="@+id/action_registration_Fragment_to_entrance_Fragment"
+            app:destination="@id/entrance_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.catuser.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.catuser.ui.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
