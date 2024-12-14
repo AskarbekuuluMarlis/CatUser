@@ -99,46 +99,6 @@
 
     </LinearLayout>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginHorizontal="100dp"
-    android:gravity=""
-    android:weightSum="3">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:background="@drawable/corner_create_button"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:background="@drawable/corner_create_button"
-        android:text="назад"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:background="@drawable/corner_create_button"
-        android:text="назад"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-</LinearLayout>
 
 </LinearLayout>
